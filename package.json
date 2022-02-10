@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev ./src/index.ts",
     "start": "tsc && node ./build/index.js",
+    "build":"tsc",
+    "dev": "ts-node-dev ./src/index.ts",
     "migrations": "tsnd ./src/data/Migrations.ts",
     "test": "clear && echo \"Running tests...\" && jest"
   },
